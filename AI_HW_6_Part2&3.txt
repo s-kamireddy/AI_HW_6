@@ -1,0 +1,19 @@
+﻿Task 2(20 points): We discussed how we can formulate RL problems as an MDP. Describe any real-world application that can be formulated as an MDP. Describe the state space, action space, transition model, and rewards for that problem. You do not need to be precise in the description of the transition model and reward (no formula is needed). Qualitative description is enough. 
+
+
+One real world problem that can be formulated as an MDP is triaging patients in the emergency room. The state space is the possible configurations of patients to beds and physicians. Action space consists of assigning a patient to a bed and doctor at a given time, or allowing them to wait.  Reward can quantify the amount of patients treated with a penalty for a long wait time or death. The transition model can start as randomly assigning physicians and beds for all patients, but refine over time based on case severity and type of injury. 
+
+
+
+
+
+
+
+
+Task 3(20 points): RL is used in various sectors - Healthcare, recommender systems and trading are a few of those. Pick one of the three areas. Explain one of the problems in any of these domains that can be more effectively solved by reinforcement learning. Find an open-source project (if any) that has addressed this problem. Explain this project in detail. 
+
+
+https://finrl.readthedocs.io/en/latest/index.html
+
+
+FinRL is an open source framework for financial reinforcement learning. In the FinRL framework, agents leverage reinforcement learning and DRL, combining trail-and error as well as exploration-and-exploitation, to automate trading and maximize gains. The DRL framework offers two main advantages: scalability and market model independence. In terms of an MDP, the trading agent’s main goal is to maximize its reward, with profit being a positive reward and loss being a negative reward. The state space consists of the shares of stocks held, current stock prices, as well as the agent’s remaining balance, as well as other market factors. The action space is made up of decisions about what to buy, hold, and sell and when.
